@@ -2,6 +2,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, BookOpen, GraduationCap, ShoppingCart, Coins, Cpu, Users, Star, TrendingUp, Award } from "lucide-react";
+import reviewProMaxImg from "@/assets/reviewpromax-screenshot.jpg";
+import studyHubImg from "@/assets/studyhub-screenshot.jpg";
 
 const projects = [
   {
@@ -9,6 +11,7 @@ const projects = [
     subtitle: "Book Review SaaS Platform",
     description: "A comprehensive SaaS platform connecting authors with verified ARC readers to generate authentic book reviews. Built through Facebook and Google advertising with a million+ reader community delivering honest, authentic reviews.",
     url: "reviewpromax.com",
+    image: reviewProMaxImg,
     icon: <BookOpen className="w-8 h-8" />,
     technologies: ["SaaS", "Digital Marketing", "Community Building", "Review Management", "Facebook Ads", "Google Ads"],
     achievements: [
@@ -29,6 +32,7 @@ const projects = [
     subtitle: "Premium Study Environment Platform",
     description: "A SaaS platform providing premium library facilities with 24/7 access, comfortable seating, and peaceful study environments designed for serious students seeking the perfect study atmosphere.",
     url: "theStudyhublib.site",
+    image: studyHubImg,
     icon: <GraduationCap className="w-8 h-8" />,
     technologies: ["SaaS", "Booking System", "Facility Management", "Student Services", "Premium Experience"],
     achievements: [
@@ -106,6 +110,18 @@ const ProjectsSection = () => {
               className="group bg-white/80 backdrop-blur-sm border border-gray-200/50 hover:border-primary-300 transition-all duration-500 hover:shadow-xl hover:scale-[1.02] overflow-hidden rounded-2xl"
               style={{ animationDelay: `${index * 200}ms` }}
             >
+              {/* Website Screenshot */}
+              {project.image && (
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={`${project.title} website screenshot`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              )}
+              
               <CardHeader className="relative p-8">
                 <div className="flex justify-between items-start mb-6">
                   <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${project.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
