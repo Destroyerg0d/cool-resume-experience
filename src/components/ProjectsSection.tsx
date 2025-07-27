@@ -2,8 +2,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, BookOpen, GraduationCap, ShoppingCart, Coins, Cpu, Users, Star, TrendingUp, Award } from "lucide-react";
-const reviewProMaxImg = "/lovable-uploads/421e8563-552e-45c6-bb57-2987aefa34ae.png";
-const studyHubImg = "/lovable-uploads/30544231-b39c-4af7-9a3f-6e658f9b80f3.png";
+const reviewProMaxImg = "/uploads/421e8563-552e-45c6-bb57-2987aefa34ae.png";
+const studyHubImg = "/uploads/30544231-b39c-4af7-9a3f-6e658f9b80f3.png";
 
 const projects = [
   {
