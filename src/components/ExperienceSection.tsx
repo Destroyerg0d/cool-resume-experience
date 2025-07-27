@@ -50,22 +50,22 @@ const ExperienceSection = () => {
     <section className="py-20 px-6 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-cyber bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-professional bg-clip-text text-transparent">
             Experience & Education
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-professional-gray max-w-3xl mx-auto">
             Active participation in competitive programming and hackathons, building innovative solutions under pressure
           </p>
         </div>
 
         {/* Hackathon Experiences */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold mb-8 text-center text-neon-cyan">Hackathon Participation</h3>
+          <h3 className="text-3xl font-bold mb-8 text-center text-professional-blue">Hackathon Participation</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {experiences.map((exp, index) => (
               <Card 
                 key={index}
-                className="group bg-gradient-card border-border hover:border-neon-purple/50 transition-all duration-500 hover:shadow-glow-purple hover:scale-105 overflow-hidden"
+                className="group bg-gradient-card border-border hover:border-professional-blue/50 transition-all duration-500 hover:shadow-medium hover:scale-105 overflow-hidden"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <CardHeader className="relative">

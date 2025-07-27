@@ -8,48 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 240 10% 7%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 240 10% 7%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 263 83% 67%;
-    --primary-foreground: 240 10% 3.9%;
+    --primary: 220 90% 56%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 10% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
 
-    --muted: 240 10% 12%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 192 100% 50%;
-    --accent-foreground: 240 10% 3.9%;
+    --accent: 220 90% 56%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 10% 15%;
-    --input: 240 10% 15%;
-    --ring: 263 83% 67%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 220 90% 56%;
 
     --radius: 0.75rem;
 
-    /* Custom design tokens */
-    --neon-cyan: 192 100% 50%;
-    --neon-purple: 263 83% 67%;
-    --neon-pink: 320 100% 70%;
+    /* Professional design tokens */
+    --professional-blue: 220 90% 56%;
+    --professional-blue-light: 220 90% 70%;
+    --professional-blue-dark: 220 90% 45%;
+    --professional-gray: 215 25% 27%;
+    --professional-gray-light: 215 15% 85%;
+    --professional-success: 142 71% 45%;
+    --professional-warning: 38 92% 50%;
     
-    --gradient-cyber: linear-gradient(135deg, hsl(var(--neon-purple)), hsl(var(--neon-cyan)));
-    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(240 10% 9%));
-    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(240 15% 8%));
+    --gradient-professional: linear-gradient(135deg, hsl(var(--professional-blue)), hsl(var(--professional-blue-light)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(210 40% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 90% 56%), hsl(220 90% 70%));
     
-    --glow-cyan: 0 0 20px hsl(var(--neon-cyan) / 0.3);
-    --glow-purple: 0 0 20px hsl(var(--neon-purple) / 0.3);
-    --glow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --shadow-soft: 0 4px 20px hsl(220 90% 56% / 0.1);
+    --shadow-medium: 0 8px 30px hsl(220 90% 56% / 0.15);
+    --shadow-strong: 0 12px 40px hsl(220 90% 56% / 0.2);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);

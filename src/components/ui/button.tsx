@@ -18,9 +18,9 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cyber: "bg-gradient-cyber text-white hover:shadow-glow-cyan hover:scale-105 border border-neon-cyan/30 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700",
-        neon: "bg-transparent border-2 border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-black hover:shadow-glow-purple transition-all duration-300",
-        glow: "bg-card border border-neon-cyan/50 text-foreground hover:border-neon-cyan hover:shadow-glow-cyan hover:text-neon-cyan transition-all duration-300",
+        professional: "bg-gradient-professional text-white hover:shadow-medium hover:scale-105 border border-professional-blue/30 transition-all duration-300",
+        success: "bg-professional-success text-white hover:bg-professional-success/90 transition-all duration-300",
+        warning: "bg-professional-warning text-white hover:bg-professional-warning/90 transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",

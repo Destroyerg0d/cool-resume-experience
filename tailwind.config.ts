@@ -62,19 +62,23 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'neon-cyan': 'hsl(var(--neon-cyan))',
-				'neon-purple': 'hsl(var(--neon-purple))',
-				'neon-pink': 'hsl(var(--neon-pink))'
+				'professional-blue': 'hsl(var(--professional-blue))',
+				'professional-blue-light': 'hsl(var(--professional-blue-light))',
+				'professional-blue-dark': 'hsl(var(--professional-blue-dark))',
+				'professional-gray': 'hsl(var(--professional-gray))',
+				'professional-gray-light': 'hsl(var(--professional-gray-light))',
+				'professional-success': 'hsl(var(--professional-success))',
+				'professional-warning': 'hsl(var(--professional-warning))'
 			},
 			backgroundImage: {
-				'gradient-cyber': 'var(--gradient-cyber)',
+				'gradient-professional': 'var(--gradient-professional)',
 				'gradient-card': 'var(--gradient-card)',
 				'gradient-hero': 'var(--gradient-hero)'
 			},
 			boxShadow: {
-				'glow-cyan': 'var(--glow-cyan)',
-				'glow-purple': 'var(--glow-purple)',
-				'glow-soft': 'var(--glow-soft)'
+				'soft': 'var(--shadow-soft)',
+				'medium': 'var(--shadow-medium)',
+				'strong': 'var(--shadow-strong)'
 			},
 			transitionProperty: {
 				'smooth': 'var(--transition-smooth)',
