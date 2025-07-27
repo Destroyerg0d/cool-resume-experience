@@ -7,13 +7,13 @@ const experiences = [
     title: "Amazon Hackathon",
     subtitle: "Machine Learning Model for Text Extraction from Images",
     year: "2024",
-    type: "Hackathon Winner",
-    description: "Developed an advanced ML model to extract text from images, applying cutting-edge image processing techniques to solve real-world problems.",
+    type: "Hackathon Participant",
+    description: "Participated in Amazon's competitive hackathon, developing an advanced ML model to extract text from images using cutting-edge image processing techniques.",
     achievements: [
-      "Built ML model for text extraction",
-      "Applied advanced image processing",
-      "Solved real-world text recognition challenges",
-      "Demonstrated technical innovation"
+      "Developed ML model for text extraction",
+      "Applied advanced image processing techniques",
+      "Participated in competitive coding environment",
+      "Gained experience in hackathon dynamics"
     ],
     icon: <Trophy className="w-6 h-6" />,
     gradient: "from-yellow-400 to-orange-500",
@@ -23,13 +23,13 @@ const experiences = [
     title: "IIT Guwahati Code Club Hackathon",
     subtitle: "Real-Time Social Media App with End-to-End Encryption",
     year: "2024", 
-    type: "Hackathon Winner",
-    description: "Built a real-time social media app with end-to-end encryption for secure messaging and file sharing, incorporating a North Indian theme.",
+    type: "Hackathon Participant",
+    description: "Participated in IIT Guwahati's hackathon, building a real-time social media app with end-to-end encryption for secure messaging and file sharing.",
     achievements: [
-      "Developed real-time messaging system",
+      "Built real-time messaging system",
       "Implemented end-to-end encryption",
-      "Created secure file sharing",
-      "Designed cultural theme integration"
+      "Created secure file sharing functionality",
+      "Collaborated in competitive environment"
     ],
     icon: <Zap className="w-6 h-6" />,
     gradient: "from-neon-cyan to-blue-500",
@@ -54,13 +54,13 @@ const ExperienceSection = () => {
             Experience & Education
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Proven track record in competitive programming and innovative problem-solving
+            Active participation in competitive programming and hackathons, building innovative solutions under pressure
           </p>
         </div>
 
         {/* Hackathon Experiences */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold mb-8 text-center text-neon-cyan">Hackathon Achievements</h3>
+          <h3 className="text-3xl font-bold mb-8 text-center text-neon-cyan">Hackathon Participation</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {experiences.map((exp, index) => (
               <Card 
@@ -97,7 +97,7 @@ const ExperienceSection = () => {
 
                 <CardContent className="space-y-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-neon-purple">Key Achievements</h4>
+                    <h4 className="font-semibold mb-3 text-neon-purple">Key Contributions</h4>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, i) => (
                         <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">

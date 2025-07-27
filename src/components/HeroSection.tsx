@@ -50,7 +50,7 @@ const HeroSection = () => {
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 hover:border-neon-purple transition-all duration-300 hover:shadow-glow-purple">
               <h3 className="text-2xl font-bold text-neon-purple mb-2">2+</h3>
-              <p className="text-muted-foreground">Hackathons Won</p>
+              <p className="text-muted-foreground">Hackathons Participated</p>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 hover:border-neon-pink transition-all duration-300">
               <h3 className="text-2xl font-bold text-neon-pink mb-2">2026</h3>
