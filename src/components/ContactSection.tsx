@@ -42,7 +42,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-gradient-hero relative overflow-hidden">
+    <section id="contact" className="py-24 px-6 bg-gradient-hero relative overflow-hidden">
       {/* Enhanced background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-64 h-64 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
@@ -92,13 +92,15 @@ const ContactSection = () => {
                   onClick={() => window.open(info.link, '_blank')}
                 >
                   <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${info.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                        {info.icon}
+                    <div className="flex items-center gap-4">
+                      <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${info.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg flex-shrink-0`}>
+                        <div className="text-white">
+                          {info.icon}
+                        </div>
                       </div>
-                      <div className="flex-1">
+                      <div className="flex-1 min-w-0">
                         <p className="font-semibold text-sm text-white/70 mb-1">{info.label}</p>
-                        <p className="font-bold text-white group-hover:text-white/90 transition-colors duration-300 mb-1">
+                        <p className="font-bold text-white group-hover:text-white/90 transition-colors duration-300 mb-1 break-words">
                           {info.value}
                         </p>
                         <p className="text-xs text-white/60">{info.description}</p>
@@ -148,6 +150,7 @@ const ContactSection = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6 p-8 pt-0">
+              <form className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-white font-medium">Name</Label>
@@ -187,7 +190,24 @@ const ContactSection = () => {
                 />
               </div>
               
-              <Button variant="elegant" size="lg" className="w-full bg-white text-primary-700 hover:bg-white/90 font-semibold text-base py-3">
+              <Button 
+                variant="elegant" 
+                size="lg" 
+                className="w-full bg-white text-primary-700 hover:bg-white/90 font-semibold text-base py-3"
+                onClick={() => {
+                  const form = document.querySelector('form') as HTMLFormElement;
+                  if (form) {
+                    // Create mailto link with form data
+                    const name = (document.getElementById('name') as HTMLInputElement)?.value || '';
+                    const email = (document.getElementById('email') as HTMLInputElement)?.value || '';
+                    const subject = (document.getElementById('subject') as HTMLInputElement)?.value || '';
+                    const message = (document.getElementById('message') as HTMLTextAreaElement)?.value || '';
+                    
+                    const mailtoLink = `mailto:realdivyanshsingh@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+                    window.open(mailtoLink, '_blank');
+                  }
+                }}
+              >
                 <Send className="w-5 h-5" />
                 Send Message
               </Button>
@@ -195,6 +215,7 @@ const ContactSection = () => {
               <p className="text-white/70 text-sm text-center">
                 I typically respond within 24 hours
               </p>
+              </form>
             </CardContent>
           </Card>
         </div>

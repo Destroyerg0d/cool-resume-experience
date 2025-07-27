@@ -30,23 +30,38 @@ const HeroSection = () => {
           
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed font-light">
             Computer Science student & <span className="font-semibold bg-gradient-primary bg-clip-text text-transparent">SaaS Entrepreneur</span>. 
-            Built successful platforms serving <span className="font-semibold text-primary-600">1M+ users</span> in 
+            Built successful platforms serving <span className="font-semibold text-primary-600">10K+ users</span> in 
             <span className="font-semibold text-primary-700"> Digital Marketing</span>, 
             <span className="font-semibold text-primary-600"> Blockchain</span>, and 
             <span className="font-semibold text-primary-500"> Automation</span>.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-16">
-            <Button variant="modern" size="lg" className="text-base px-8 py-3">
+            <Button 
+              variant="modern" 
+              size="lg" 
+              className="text-base px-8 py-3"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Mail className="w-5 h-5" />
               Get In Touch
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="elegant" size="lg" className="text-base px-8 py-3">
+            <Button 
+              variant="elegant" 
+              size="lg" 
+              className="text-base px-8 py-3"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Github className="w-5 h-5" />
               View Projects
             </Button>
-            <Button variant="outline" size="lg" className="text-base px-8 py-3">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-base px-8 py-3"
+              onClick={() => window.open('tel:+917380398812', '_blank')}
+            >
               <Phone className="w-5 h-5" />
               +91 7380398812
             </Button>
@@ -74,7 +89,7 @@ const HeroSection = () => {
               <div className="flex items-center justify-center w-12 h-12 bg-gradient-primary rounded-xl mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
                 <Users className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">1M+</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-2">10K+</h3>
               <p className="text-gray-600 font-medium">Users Served</p>
             </div>
           </div>

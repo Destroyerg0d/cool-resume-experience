@@ -87,7 +87,7 @@ const ProjectsSection = () => {
   const otherProjects = projects.filter(p => !p.featured);
 
   return (
-    <section className="py-24 px-6 bg-gradient-subtle">
+    <section id="projects" className="py-24 px-6 bg-gradient-subtle">
       <div className="container mx-auto">
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-primary-50 border border-primary-200 rounded-full px-4 py-2 mb-6">
@@ -195,11 +195,20 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="flex gap-3 pt-4">
-                  <Button variant="modern" size="sm" className="flex-1">
+                  <Button 
+                    variant="modern" 
+                    size="sm" 
+                    className="flex-1"
+                    onClick={() => window.open(`https://${project.url}`, '_blank')}
+                  >
                     <ExternalLink className="w-4 h-4" />
                     View Project
                   </Button>
-                  <Button variant="elegant" size="sm">
+                  <Button 
+                    variant="elegant" 
+                    size="sm"
+                    onClick={() => window.open('https://github.com/Destroyerg0d', '_blank')}
+                  >
                     <Github className="w-4 h-4" />
                   </Button>
                 </div>
@@ -249,7 +258,12 @@ const ProjectsSection = () => {
                     )}
                   </div>
                   
-                  <Button variant="outline" size="sm" className="w-full">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="w-full"
+                    onClick={() => window.open('https://github.com/Destroyerg0d', '_blank')}
+                  >
                     <ExternalLink className="w-3 h-3" />
                     Learn More
                   </Button>
