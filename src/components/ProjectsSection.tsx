@@ -2,8 +2,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, BookOpen, GraduationCap, ShoppingCart, Coins, Cpu, Users, Star, TrendingUp, Award } from "lucide-react";
-import reviewProMaxImg from "@/assets/reviewpromax-screenshot.jpg";
-import studyHubImg from "@/assets/studyhub-screenshot.jpg";
+import reviewProMaxImg from "@/assets/reviewpromax-screenshot.png";
+import studyHubImg from "@/assets/studyhub-screenshot.png";
 
 const projects = [
   {
