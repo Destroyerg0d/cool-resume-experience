@@ -25,6 +25,12 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
+					50: 'hsl(var(--primary-50))',
+					100: 'hsl(var(--primary-100))',
+					500: 'hsl(var(--primary-500))',
+					600: 'hsl(var(--primary-600))',
+					700: 'hsl(var(--primary-700))',
+					900: 'hsl(var(--primary-900))',
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
@@ -62,23 +68,34 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'professional-blue': 'hsl(var(--professional-blue))',
-				'professional-blue-light': 'hsl(var(--professional-blue-light))',
-				'professional-blue-dark': 'hsl(var(--professional-blue-dark))',
-				'professional-gray': 'hsl(var(--professional-gray))',
-				'professional-gray-light': 'hsl(var(--professional-gray-light))',
-				'professional-success': 'hsl(var(--professional-success))',
-				'professional-warning': 'hsl(var(--professional-warning))'
+				gray: {
+					50: 'hsl(var(--gray-50))',
+					100: 'hsl(var(--gray-100))',
+					200: 'hsl(var(--gray-200))',
+					300: 'hsl(var(--gray-300))',
+					400: 'hsl(var(--gray-400))',
+					500: 'hsl(var(--gray-500))',
+					600: 'hsl(var(--gray-600))',
+					700: 'hsl(var(--gray-700))',
+					800: 'hsl(var(--gray-800))',
+					900: 'hsl(var(--gray-900))'
+				},
+				success: 'hsl(var(--success))',
+				warning: 'hsl(var(--warning))'
 			},
 			backgroundImage: {
-				'gradient-professional': 'var(--gradient-professional)',
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
-				'gradient-hero': 'var(--gradient-hero)'
+				'gradient-subtle': 'var(--gradient-subtle)'
 			},
 			boxShadow: {
-				'soft': 'var(--shadow-soft)',
-				'medium': 'var(--shadow-medium)',
-				'strong': 'var(--shadow-strong)'
+				'xs': 'var(--shadow-xs)',
+				'sm': 'var(--shadow-sm)',
+				'md': 'var(--shadow-md)',
+				'lg': 'var(--shadow-lg)',
+				'xl': 'var(--shadow-xl)',
+				'glow': 'var(--shadow-glow)'
 			},
 			transitionProperty: {
 				'smooth': 'var(--transition-smooth)',

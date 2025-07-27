@@ -1,60 +1,81 @@
 import { Button } from "@/components/ui/button";
-import { Github, Mail, MapPin, Phone } from "lucide-react";
+import { Github, Mail, MapPin, Phone, ArrowRight, Star, Users, TrendingUp } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
-      {/* Subtle background elements */}
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-subtle overflow-hidden">
+      {/* Enhanced background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-professional-blue/5 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-professional-blue-light/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary-500/5 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-600/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary-100/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-professional bg-clip-text text-transparent">
+        <div className="animate-fade-in max-w-5xl mx-auto">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-2 mb-8 shadow-sm">
+            <div className="w-2 h-2 bg-success rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium text-gray-700">Available for new opportunities</span>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
             Divyansh Singh
           </h1>
           
-          <div className="flex items-center justify-center gap-2 mb-4 text-professional-gray">
+          <div className="flex items-center justify-center gap-2 mb-6 text-gray-600">
             <MapPin className="w-5 h-5" />
-            <span>Greater Noida, Uttar Pradesh, India</span>
+            <span className="text-lg">Greater Noida, Uttar Pradesh, India</span>
           </div>
           
-          <p className="text-xl md:text-2xl text-professional-gray mb-8 max-w-3xl mx-auto leading-relaxed">
-            Computer Science student & <span className="text-professional-blue font-semibold">SaaS Entrepreneur</span>. 
-            Built successful platforms in <span className="text-professional-blue-dark font-semibold">Digital Marketing</span>, 
-            <span className="text-professional-blue font-semibold"> Blockchain</span>, and <span className="text-professional-blue-light font-semibold">Automation</span>. 
-            Passionate about building scalable solutions.
+          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed font-light">
+            Computer Science student & <span className="font-semibold bg-gradient-primary bg-clip-text text-transparent">SaaS Entrepreneur</span>. 
+            Built successful platforms serving <span className="font-semibold text-primary-600">1M+ users</span> in 
+            <span className="font-semibold text-primary-700"> Digital Marketing</span>, 
+            <span className="font-semibold text-primary-600"> Blockchain</span>, and 
+            <span className="font-semibold text-primary-500"> Automation</span>.
           </p>
           
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <Button variant="professional" size="lg">
+          <div className="flex flex-wrap justify-center gap-4 mb-16">
+            <Button variant="modern" size="lg" className="text-base px-8 py-3">
               <Mail className="w-5 h-5" />
               Get In Touch
+              <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="elegant" size="lg" className="text-base px-8 py-3">
               <Github className="w-5 h-5" />
               View Projects
             </Button>
-            <Button variant="secondary" size="lg">
+            <Button variant="outline" size="lg" className="text-base px-8 py-3">
               <Phone className="w-5 h-5" />
               +91 7380398812
             </Button>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-6 hover:border-professional-blue transition-all duration-300 hover:shadow-medium">
-              <h3 className="text-2xl font-bold text-professional-blue mb-2">7+</h3>
-              <p className="text-professional-gray">Projects Completed</p>
+          {/* Enhanced Stats Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="group bg-white/60 backdrop-blur-md border border-gray-200/50 rounded-2xl p-8 hover:border-primary-300 transition-all duration-500 hover:shadow-lg hover:scale-[1.02]">
+              <div className="flex items-center justify-center w-12 h-12 bg-gradient-primary rounded-xl mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <TrendingUp className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-2">7+</h3>
+              <p className="text-gray-600 font-medium">Projects Completed</p>
             </div>
-            <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-6 hover:border-professional-blue-light transition-all duration-300 hover:shadow-medium">
-              <h3 className="text-2xl font-bold text-professional-blue-light mb-2">2+</h3>
-              <p className="text-professional-gray">Live SaaS Products</p>
+            
+            <div className="group bg-white/60 backdrop-blur-md border border-gray-200/50 rounded-2xl p-8 hover:border-primary-300 transition-all duration-500 hover:shadow-lg hover:scale-[1.02]">
+              <div className="flex items-center justify-center w-12 h-12 bg-gradient-primary rounded-xl mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <Star className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-2">2+</h3>
+              <p className="text-gray-600 font-medium">Live SaaS Products</p>
             </div>
-            <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-6 hover:border-professional-blue-dark transition-all duration-300 hover:shadow-medium">
-              <h3 className="text-2xl font-bold text-professional-blue-dark mb-2">2026</h3>
-              <p className="text-professional-gray">Expected Graduation</p>
+            
+            <div className="group bg-white/60 backdrop-blur-md border border-gray-200/50 rounded-2xl p-8 hover:border-primary-300 transition-all duration-500 hover:shadow-lg hover:scale-[1.02]">
+              <div className="flex items-center justify-center w-12 h-12 bg-gradient-primary rounded-xl mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <Users className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-2">1M+</h3>
+              <p className="text-gray-600 font-medium">Users Served</p>
             </div>
           </div>
         </div>
